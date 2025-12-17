@@ -1,0 +1,18 @@
+name: firstapp        # <-- Ajoute cette ligne, le nom de ton projet
+description: A new Flutter project.
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/3ii.JPG
+    - assets/admin.JPG
+    - assets/gerant.JPG
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
