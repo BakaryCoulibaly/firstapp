@@ -14,27 +14,6 @@ class _LoginPageState extends State<LoginPage> {
   final controllerLogin = TextEditingController();
   final controllerPassword = TextEditingController();
 
-  // --- Informations des utilisateurs ---
-  final Map<String, Map<String, String>> usersData = {
-    "3ii": {
-      "name": "Classe 3ii",
-      "image": "assets/3ii.JPG",
-      "number": "70 00 00 01"
-    },
-    "admin": {
-      "name": "Administrateur",
-      "image": "assets/admin.JPG",
-      "number": "70 00 00 02"
-    },
-    "gerant": {
-      "name": "Gérant de Stock",
-      "image": "assets/gerant.JPG",
-      "number": "70 00 00 03"
-    }
-  };
-
-  // SUPPRIMEZ CETTE LIGNE: get ScaffoldMessenger => null;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Text(
               widget.title,
-              style: TextStyle(fontSize: 18, color: Colors.grey[600]),
+              style: TextStyle(fontSize: 18, color: Colors.grey),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 40),
@@ -79,18 +58,17 @@ class _LoginPageState extends State<LoginPage> {
                 String login = controllerLogin.text;
                 String password = controllerPassword.text;
 
-                bool ok = (login == "3ii" && password == "P@sser.3ii2025") ||
+                bool ok = (login == "3ii" && password == "TIPO") ||
                     (login == "admin" && password == "Gestion@123.2025") ||
                     (login == "gerant" && password == "gerant.3ii@2025");
 
                 if (ok) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => Contactlist(),
+                      builder: (context) => const ContactList(),
                     ),
                   );
                 } else {
-                  // CORRECTION: Utilisez ScaffoldMessenger.of(context) directement
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
                       content: Text("Login ou mot de passe incorrect"),
@@ -99,13 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                   );
                 }
               },
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 15),
-              ),
-              child: const Text(
-                'Connexion',
-                style: TextStyle(fontSize: 16),
-              ),
+              child: const Text("Connexion"),
             ),
           ],
         ),

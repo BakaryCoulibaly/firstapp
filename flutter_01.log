@@ -1,0 +1,57 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+DartDevelopmentServiceException: DartDevelopmentServiceException: Failed to start Dart Development Service
+
+```
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.38.1, on Microsoft Windows [version 10.0.26100.6901], locale fr-FR) [2,9s]
+    [32m•[39m Flutter version 3.38.1 on channel stable at C:\Users\HP\Desktop\flutter_windows_3.38.1-stable\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision b45fa18946 (10 days ago), 2025-11-12 22:09:06 -0600
+    [32m•[39m Engine revision b5990e5ccc
+    [32m•[39m Dart version 3.10.0
+    [32m•[39m DevTools version 2.51.1
+    [32m•[39m Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android,
+      enable-ios, cli-animations, enable-native-assets, omit-legacy-version-file, enable-lldb-debugging
+
+[32m[✓][39m Windows Version (11 Pro 64-bit, 24H2, 2009) [16,6s]
+
+[31m[✗][39m Android toolchain - develop for Android devices [1 374ms]
+    [31m✗[39m Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/to/windows-android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, please use
+      `flutter config --android-sdk` to update to that location.
+
+
+[32m[✓][39m Chrome - develop for the web [1 348ms]
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[33m[!][39m Visual Studio - develop Windows apps (Visual Studio Community 2022 17.14.20) [1 344ms]
+    [32m•[39m Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    [32m•[39m Visual Studio Community 2022 version 17.14.36705.20
+    [31m✗[39m The current Visual Studio installation is incomplete.
+      Please use Visual Studio Installer to complete the installation or reinstall Visual Studio.
+
+[32m[✓][39m Connected device (3 available) [33ms]
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft Windows [version 10.0.26100.6901]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome 141.0.7390.123
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft Edge 142.0.3595.94
+
+[32m[✓][39m Network resources [2,8s]
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
